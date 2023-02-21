@@ -1,0 +1,166 @@
+:root{
+    --primary-color: #00425A;
+    --secondary: #FC7300;
+    --grey: #6B6B6A;
+    --rounder: 8px
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+.connexion_button{
+    background: var(--secondary);
+    text-decoration: none;
+    height: 40px;
+    width: 127px;
+    border-radius: var(--rounder);
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+
+}
+.connexion_button>span{
+    color: white;
+    font-size:14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Manrope, serif;
+
+}
+.logo{
+    width: auto;
+    height: 47px;
+}
+.header-costume{
+    display: flex;
+    justify-content: space-between;
+    padding: 4.84px 40px ;
+    border-bottom: #a4a4a1 0.2px solid;
+
+}
+
+.main{
+    gap: 10px;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.infos{
+    flex: 1;
+    display: block;
+    height: 100%;
+    position: relative;
+
+}
+
+
+
+
+.hero{
+    flex: 1;
+    display: flex;
+
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+
+}
+.doctor_img{
+    height: 788px;
+    width: 595px;
+
+    border-radius: 0px;
+
+}
+
+.profil_card{
+    box-sizing: border-box;
+
+    width: 266px;
+    height: 114px;
+    left: -60px;
+    background: #FFFFFF;
+    padding: 16px;
+    gap: 16px;
+    position: absolute;
+    top: 20%;
+    border: rgba(154, 161, 184, 0.25) 1px solid;
+    border-radius: 16px;
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+.profil{
+    width: auto;
+}
+.user{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.profil_texts{
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope, serif;
+}
+.name{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+.speciality{
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 10px;
+}
+.user::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: -10px;
+    position: absolute;
+    background: #9AA1B8;
+}
+
+.date_text{
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.hour{
+    height: 12.333333969116211px;
+    width: 12.333333969116211px;
+
+}
+
+
+
