@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <style media="screen, print">
+        @font-face {
+            font-family: "Proxima Nova";
+            src: url("public/font/Proxima Nova Font.otf");
+        }
+
+        .title{
+            font-family: "Proxima Nova",serif;       
+        }
+    </style>
         <meta charset="UTF-8">
     <link rel="stylesheet" href="public/css/index.css">
     <title>Title</title>
@@ -20,20 +31,36 @@
 
 </header>
 <main class="main">
-
-
     <section class="infos">
-     <h1 class="title">Rejoinez Le Réseau !</h1>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc libero, </p>
-        <div class="steps">
-            <div class="step_1">
-                <span class="text_step_1">Infos médicales</span>
-                <img src="" alt="" class="icon_setp_1">
+        <div class="title_container">
+            <h1 class="title">Rejoinez Le Réseau !</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc libero, </p>
+
+        </div>
+      <div class="steps">
+
+          <div class="steps_text" >
+              <span class="text_step_1">Infos médicales</span>
+              <span class="text_step_2">Infos personnelles</span>
+
+          </div>
+          <div class="step">
+
+                <div class="selected">
+                    <img src="public/images/Vector.png" alt="" class="icon_setp_1">
+
+                </div>
+                <div class="line"></div>
+
+                <div class="no_selected">
+                    <img src="public/images/VectorUser.png" alt="" class="icon_setp_2">
+
+                </div>
+
             </div>
-            <div class="line"></div>
-            <div class="step_2">
-                <span class="text_step_2">Infos personnelles</span>
-                <img src="" alt="" class="icon_setp_2">
+
+
+
 
 
             </div>

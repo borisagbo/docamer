@@ -68,13 +68,104 @@ time, mark, audio, video {
     justify-content: space-between;
     align-items: center;
 }
+
 .infos{
+    display: flex;
     flex: 1;
-    display: block;
     height: 100%;
+    position: relative;
+    padding: 0 5rem;
+    flex-direction: column;
+  justify-content: center;
+
+}
+.title_container{
+    width: 440px;
+    height: 124px;
+    margin-bottom: 2rem;
+
+
+}
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+
+}
+
+.description{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+}
+
+.steps{
+    display: block;
+    justify-content: space-between;
     position: relative;
 
 }
+.steps>div {
+    display: flex;
+   justify-content: space-between;
+}
+.steps>div>span  {
+    width: min-content;
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+.step{
+    gap: 10px;
+}
+.step>div:nth-child(2n+1) {
+    width: 40px;
+    height: 32px;
+
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.selected{
+    background: #000;
+}
+.no_selected{
+    background: #EBEBF0;
+}
+
+.icon_setp_1{
+    
+}
+.icon_setp_2{
+    
+}
+.line{
+    width: 100%;
+    background: #000;
+    height: 1px;
+    align-self: center;
+    justify-self: center;
+}
+
 
 
 
