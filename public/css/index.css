@@ -70,6 +70,7 @@ time, mark, audio, video {
 }
 
 .infos{
+    gap: 2rem;
     display: flex;
     flex: 1;
     height: 100%;
@@ -82,7 +83,7 @@ time, mark, audio, video {
 .title_container{
     width: 440px;
     height: 124px;
-    margin-bottom: 2rem;
+
 
 
 }
@@ -122,17 +123,9 @@ time, mark, audio, video {
     display: flex;
    justify-content: space-between;
 }
-.steps>div>span  {
-    width: min-content;
-    font-family: 'Manrope', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-
-}
 .step{
     gap: 10px;
+    width: 90%;
 }
 .step>div:nth-child(2n+1) {
     width: 40px;
@@ -146,14 +139,23 @@ time, mark, audio, video {
 
 }
 .selected{
-    background: #000;
+    background: var(--primary-color);
+}
+.selected_txt{
+    color: var(--primary-color);
+
 }
 .no_selected{
     background: #EBEBF0;
 }
 
-.icon_setp_1{
-    
+.text_step{
+    width: min-content;
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 24px;
 }
 .icon_setp_2{
     
@@ -164,6 +166,91 @@ time, mark, audio, video {
     height: 1px;
     align-self: center;
     justify-self: center;
+}
+.your_job{
+    width: 100%;
+}
+.input{
+
+    width: 100%;
+
+    background: #FFFFFF;
+    border: none;
+
+
+}
+.input_container{
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+
+    width: 100%;
+    height: 40px;
+
+    background: #FFFFFF;
+
+    /* Grey-input/2 */
+    border: 1px solid #ABABB5;
+    border-radius: 4px;
+
+
+    display: flex;
+    gap:3px;
+}
+.input-icon{
+
+}
+.label{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.label::before{
+    content: '*';
+    color: red;
+
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tag{
+    border-radius: 60px;
+    padding: 8px 16px;
+    background: #EDEDED;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 2px;
+
+}
+.tag:nth-child(1){
+    background: rgba(252, 115, 0, 0.25);
+}
+.tag_icon{
+    width: 100%;
+    height: 12.25px;
+    align-items: center;
+    align-self: center;
+}
+
+.tag_text{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+
 }
 
 
@@ -180,12 +267,46 @@ time, mark, audio, video {
     position: relative;
 
 }
-.doctor_img{
-    height: 788px;
-    width: 595px;
 
+.image{
+    position: relative;
     border-radius: 0px;
+    height: 100%;
+}
+.image::before{
+    content: '';
+    width: 100px;
+    height: 53px;
+    left: 350px;
+    top: 75px;
+    z-index: -1;
 
+    background-image: url(../images/Line.png) ;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+}
+.image::after{
+    content: '';
+    width: 200px;
+    height: 60px;
+    left: 10px;
+    top: 90%;
+    z-index: -1;
+
+    background-image: url(../images/Line.png) ;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+}
+.doctor_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .profil_card{
@@ -207,7 +328,9 @@ time, mark, audio, video {
 }
 .profil{
     width: auto;
+
 }
+
 .user{
     display: flex;
     gap: 1rem;
@@ -250,6 +373,50 @@ time, mark, audio, video {
 .hour{
     height: 12.333333969116211px;
     width: 12.333333969116211px;
+
+}
+.button{
+    align-self: end;
+    background: var(--secondary);
+    text-decoration: none;
+    border-radius: var(--rounder);
+    border: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    overflow: visible;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+
+}
+.button>span{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    width: max-content;
+
+    /* identical to box height, or 156% */
+    display: flex;
+    align-items: center;
+
+    /* Colors/Greyscale/100 */
+    color: #FFFFFF;
+
+}
+.button>img{
+    align-self: center;
+    height: 20px;
+    width: auto;
+}
+
+.form{
+   display: flex;
+flex-direction: column;
+    gap: 20px;
 
 }
 
