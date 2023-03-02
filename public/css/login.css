@@ -1,0 +1,454 @@
+:root{
+    --primary-color: #00425A;
+    --secondary: #FC7300;
+    --grey: #6B6B6A;
+    --rounder: 8px
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+.connexion_button{
+    background: var(--secondary);
+    text-decoration: none;
+    height: 40px;
+    width: 127px;
+    border-radius: var(--rounder);
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+
+}
+.connexion_button>span{
+    color: white;
+    font-size:14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Manrope, serif;
+
+}
+.logo{
+    width: auto;
+    height: 47px;
+}
+.header-costume{
+    display: flex;
+    justify-content: space-between;
+    padding: 4.84px 40px ;
+    border-bottom: #a4a4a1 0.2px solid;
+
+}
+
+.main{
+    gap: 10px;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FBFBFB;
+
+}
+
+.infos{
+    gap: 2rem;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    padding: 0 5rem;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.title_container{
+    width: 440px;
+    height: 124px;
+
+
+
+}
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+
+}
+
+.description{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+}
+
+.steps{
+    display: block;
+    justify-content: space-between;
+    position: relative;
+
+}
+.steps>div {
+    display: flex;
+    justify-content: space-between;
+}
+.step{
+    gap: 10px;
+    width: 90%;
+}
+.step>div:nth-child(2n+1) {
+    width: 40px;
+    height: 32px;
+
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.selected{
+    background: var(--primary-color);
+}
+.selected_txt{
+    color: var(--primary-color);
+
+}
+.no_selected{
+    background: #EBEBF0;
+}
+
+.text_step{
+    width: min-content;
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 24px;
+}
+.icon_setp_2{
+
+}
+.line{
+    width: 100%;
+    background: #000;
+    height: 1px;
+    align-self: center;
+    justify-self: center;
+}
+.your_job{
+    width: 100%;
+}
+.input{
+
+    width: 100%;
+
+    background: #FFFFFF;
+    border: none;
+
+
+}
+.input_container{
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+
+    width: 100%;
+    height: 40px;
+
+    background: #FFFFFF;
+
+    /* Grey-input/2 */
+    border: 1px solid #ABABB5;
+    border-radius: 4px;
+
+
+    display: flex;
+    gap:3px;
+}
+.input-icon{
+
+}
+.label{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.label::before{
+    content: '*';
+    color: red;
+
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tag{
+    border-radius: 60px;
+    padding: 8px 16px;
+    background: #EDEDED;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 2px;
+
+}
+.tag:nth-child(1){
+    background: rgba(252, 115, 0, 0.25);
+}
+.tag_icon{
+    width: 100%;
+    height: 12.25px;
+    align-items: center;
+    align-self: center;
+}
+
+.tag_text{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+
+}
+
+
+
+
+
+.hero{
+    flex: 1;
+    display: flex;
+
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    width: 50%;
+
+}
+
+.image{
+    position: relative;
+    border-radius: 0px;
+    height: max-content;
+    place-items: end;
+}
+
+.doctor_img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profil_card{
+    box-sizing: border-box;
+
+    width: 266px;
+    height: 114px;
+    left: -60px;
+    background: #FFFFFF;
+    padding: 16px;
+    gap: 16px;
+    position: absolute;
+    top: 20%;
+    border: rgba(154, 161, 184, 0.25) 1px solid;
+    border-radius: 16px;
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+.profil{
+    width: auto;
+
+}
+
+.user{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.profil_texts{
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope, serif;
+}
+.name{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+.speciality{
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 10px;
+}
+.user::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: -10px;
+    position: absolute;
+    background: #9AA1B8;
+}
+
+.date_text{
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.hour{
+    height: 12.333333969116211px;
+    width: 12.333333969116211px;
+
+}
+.button{
+    align-self: end;
+    background: var(--secondary);
+    text-decoration: none;
+    border-radius: var(--rounder);
+    border: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    overflow: visible;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+
+}
+.button>span{
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    width: max-content;
+
+    /* identical to box height, or 156% */
+    display: flex;
+    align-items: center;
+
+    /* Colors/Greyscale/100 */
+    color: #FFFFFF;
+
+}
+.button>img{
+    align-self: center;
+    height: 20px;
+    width: auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    width: 100%;
+}
+.back{
+    background:none;
+    text-decoration: none;
+    justify-content: center;
+    border: #00425A solid 2px;
+    margin:0 ;
+    padding: 0.3rem 2.5rem;
+    border-radius: var(--rounder);
+    color: #00425A;
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+
+
+}
+.validation{
+    display: flex;
+    width: max-content;
+
+}
+.checkbox{
+    accent-color: #FC7300;
+    color: white;
+
+    box-sizing: border-box;
+
+    width: 24px;
+    height: 24px;
+
+    /* Secondary/2 */
+    background: #FC7300;
+
+    /* Secondary/2 */
+    border: 2.4px solid #FC7300;
+    border-radius: 2.4px;
+}
+
+
+.condition{
+    /* Body/Regular/4 */
+    font-family: 'Manrope', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+}
+
+
